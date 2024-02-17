@@ -1,0 +1,11 @@
+<div>
+    <Nav links={navLinks} dropdown={{ label: 'Dropdown', options: dropdownOptions }}/>
+    <h1>Home</h1>
+    <p>{email}</p>
+    <Input_props label="Email" type="email" placeholder="Enter your email" value={email} onChange={handleEmailChange} />
+    <p>{lastName}</p>
+    <Input_props label="Last name" type={'text'} value={lastName} placeholder={`enter last name`} onChange={handleLastNameChange}/>
+    <p>{password}</p>
+    <Input_props label="password" type="password" placeholder="Enter password" value={password} onChange={handlePasswordChange}/>
+
+</div>

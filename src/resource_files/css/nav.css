@@ -1,0 +1,12 @@
+
+nav {
+    background-color: rgba(0, 0, 255, 0.63);
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    color: white;
+    opacity: 0.8;
+}
