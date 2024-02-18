@@ -6,7 +6,7 @@ nav {
     align-items: center;
     justify-content: flex-end;
     padding: 0 20px;
-    color: white;
+    color: black;
     opacity: 0.8;
 }
 
@@ -39,6 +39,7 @@ nav ul li a{
     border-radius: 10px;
     justify-content: center;
     text-align: center;
+    color: white;
 }
 
 button{

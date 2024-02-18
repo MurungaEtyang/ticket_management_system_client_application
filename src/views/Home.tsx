@@ -1,17 +1,15 @@
 
+import "../resource_files/css/style.css"
+import React, { useState } from 'react';
 import { Home_nav } from "../components/nav_bar/Home_nav";
 import { Home_inputs } from "../components/inputs/Home_inputs";
-import { Button } from "../components/props/Button";
 import ImageComponent from "../components/props/Image";
-import React from "react";
 
 export const Home = () => {
-    const handleSubmit = () => {
-        alert("hello world");
-    };
+
 
     return (
-        <div className="container" style={{ backgroundImage: `url(${require("../resource_files/images/background/home.jpg")})`, backgroundSize: "cover", minHeight: "100vh" }}>
+        <div className={`home-container`} >
             <div style={{ marginBottom: "40px" }}>
                 <Home_nav />
             </div>

@@ -1,3 +1,7 @@
-form{
-    background-color: #007bff;
+
+.home-container {
+    background-image: url(../images/background/home.jpg), linear-gradient(#151414, #151414);
+    background-size: cover;
+    min-height: 100vh;
+    background-blend-mode: overlay;
 }

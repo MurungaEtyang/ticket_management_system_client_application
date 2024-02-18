@@ -1,3 +1,7 @@
+body{
+  background-color: black;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +9,32 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.toggleButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 255, 0.29);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+  border-radius: 50px;
+  height: 30px;
+  width: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.toggleButton:hover {
+  background-color: rgba(255, 255, 255, 0.38);
+}
+
+.toggleButton svg {
+  width: 20px;
+  height: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -23,6 +53,39 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.dark-mode {
+  /*background-color: #1f1f1f;*/
+  color: #ffffff;
+}
+
+.dark-mode button {
+  /*background-color: #ffffff;*/
+  color: black;
+}
+
+.dark-mode input{
+  color: black;
+}
+
+.dark-mode a{
+  color: black;
+}
+.dark-mode nav{
+  background-color: rgba(116, 116, 143, 0.53);
+}
+
+.dark-mode .home-container{
+  background-color: rgba(240, 248, 255, 0.62);
+}
+
+.dark-mode .container {
+  /* Modify the background color and text color for the container */
+  background-color: #333333;
+  color: #cccccc;
+  height: 100vh;
+}
+
 
 .App-link {
   color: #61dafb;
