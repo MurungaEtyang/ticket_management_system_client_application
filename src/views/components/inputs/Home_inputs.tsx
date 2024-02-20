@@ -2,8 +2,8 @@
 import { Input } from '../props/Input'
 import React, { useState } from "react";
 import {Button} from "../props/Button";
-import { ApiServices } from "../../api_handler/services/ApiServices";
-import { Login} from "../../api_handler/backend/Login";
+import { ApiServices } from "../../../api_handler/services/ApiServices";
+import { Login} from "../../../api_handler/backend/Login";
 
 export const Home_inputs = () => {
     const [email, setEmail] = useState('');

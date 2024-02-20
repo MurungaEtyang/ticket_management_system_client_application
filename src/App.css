@@ -55,12 +55,11 @@ body{
 }
 
 .dark-mode {
-  /*background-color: #1f1f1f;*/
   color: #ffffff;
 }
 
 .dark-mode button {
-  /*background-color: #ffffff;*/
+  background-color: rgba(0, 0, 255, 0.33);
   color: black;
 }
 
@@ -71,6 +70,63 @@ body{
 .dark-mode a{
   color: black;
 }
+
+.dark-mode p{
+  color: black;
+}
+
+.dark-mode h1{
+  color: black;
+}
+
+.dark-mode h2{
+  color: black;
+}
+
+.dark-mode h3{
+  color: black;
+}
+
+.dark-mode h4{
+  color: black;
+}
+
+.dark-mode h5{
+  color: black;
+}
+
+.dark-mode h6{
+  color: black;
+}
+
+.dark-mode label{
+  color: black;
+}
+
+.dark-mode td{
+  color: black;
+}
+
+.dark-mode th{
+  color: black;
+}
+
+.dark-mode select{
+  color: black;
+}
+
+.dark-mode Select{
+  color: black;
+}
+
+.dark-mode option{
+  color: black;
+}
+
+.dark-mode .card-users-body{
+  color: rgba(0, 0, 0, 0.06);
+}
+
 .dark-mode nav{
   background-color: rgba(116, 116, 143, 0.53);
 }
@@ -85,6 +141,10 @@ body{
   color: #cccccc;
   height: 100vh;
 }
+
+/*.dark-mode .dropdown{*/
+/*  color: rgb(0, 0, 0);*/
+/*}*/
 
 
 .App-link {

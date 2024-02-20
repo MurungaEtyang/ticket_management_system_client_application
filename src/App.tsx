@@ -1,9 +1,11 @@
 
 import React, { useState, useEffect } from 'react';
-import { MdToggleOff, MdToggleOn } from 'react-icons/md';
-import { ThemeProvider } from "./components/props/ThemeContext";
-import { Home } from "./views/Home";
+import { IoMoonOutline, IoSunnyOutline } from 'react-icons/io5';
+import { ThemeProvider } from "./views/components/props/ThemeContext";
+import { Index } from "./views/Index";
 import './App.css';
+import { AdminDashboard } from "./views/admin/AdminDashboard";
+import {RegisterUser} from "./views/admin/users/RegisterUser";
 
 function App() {
     const [darkMode, setDarkMode] = useState(false);
@@ -22,15 +24,16 @@ function App() {
 
     return (
         <body>
-
-            <ThemeProvider darkMode={darkMode} toggleDarkMode={toggleDarkMode}>
-                <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
-                    <button className={`toggleButton`} onClick={toggleDarkMode}>
-                        {darkMode ? <MdToggleOff /> : <MdToggleOn />}
-                    </button>
-                    <Home />
-                </div>
-            </ThemeProvider>
+        <ThemeProvider darkMode={darkMode} toggleDarkMode={toggleDarkMode}>
+            <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
+                <button className={`toggleButton`} onClick={toggleDarkMode}>
+                    {darkMode ? <IoMoonOutline /> : <IoSunnyOutline />}
+                </button>
+                {/*<Index />*/}
+                <AdminDashboard />
+                {/*<RegisterUser />*/}
+            </div>
+        </ThemeProvider>
         </body>
     );
 }

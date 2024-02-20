@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../resource_files/css/all_props.css";
+import "../../../resource_files/css/all_props.css";
 type InputProps = {
     label?: string;
     type?: string;
