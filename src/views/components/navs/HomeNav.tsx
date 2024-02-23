@@ -14,7 +14,7 @@ import AllDepartments from "../../admin/department/AllDepartments";
 import Faqs from "../../admin/setting/Faqs";
 import {Index} from "../../Index";
 
-export const AdminNavLinks = () => {
+export const HomeNav = () => {
 
     const [renderComponent, setRenderComponent] = useState<React.ReactNode>(null);
 
@@ -63,37 +63,29 @@ export const AdminNavLinks = () => {
     };
 
     const navLinks = [
-        { label: 'DASHBOARD', url: '/admin' },
+        { label: 'DASHBOARD', url: '/dashboard' },
         {
-            label: 'MEMBERS',
+            label: 'Tickets',
             dropdownOptions: [
-                { label: 'Register', url: '/register' },
-                { label: 'Users', url: '/all_users' },
-                { label: 'Promotion', url: '/promote_user' },
-                { label: 'Demotion', url: '/demote_user' },
+                { label: 'All Tickets', url: '/register' },
+                { label: 'Open Tickets', url: '/all_users' },
+                { label: 'Pending Tickets', url: '/promote_user' },
+                { label: 'Closed Tickets', url: '/demote_user' },
             ],
         },
         {
-            label: 'TICKETS',
+            label: 'Book TICKETS',
             dropdownOptions: [
-                { label: 'Tickets', url: '/tickets' },
+                { label: 'Tickets', url: '/book_tickets' },
                 { label: 'Guest Tickets', url: '/guest_tickets' },
             ],
         },
         {
-            label: 'DEPARTMENTS',
+            label: 'Menu',
             dropdownOptions: [
-                { label: 'create depart', url: '/create_department' },
-                { label: 'all departments', url: '/all_departments' },
-                { label: 'add users', url: '/add_users_to_department' },
-                { label: 'remove users', url: '/remove_users_from_department' },
-                { label: 'Best Depart', url: '/best_department' },
+                { label: 'Faqs', url: '/faqs' },
+
             ],
-        },
-        { label: 'SETTINGS', dropdownOptions: [
-                { label: 'General Settings', url: '/general_settings' },
-                { label: 'Faqs', url: '/faqs' }
-            ]
         },
         {
             label: 'PROFILE',

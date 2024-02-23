@@ -32,7 +32,7 @@ export const RegisterUser = () => {
 
     return (
         <div className={`register-user`}>
-            <form>
+            <form onClick={handleFormSubmit}>
                 {credentials.map((field, index) => (
                     <div key={index} className="input-container"> {/* Add a class to the div */}
                         {field.type === 'dropdown' ? (
@@ -58,7 +58,7 @@ export const RegisterUser = () => {
                     </div>
                 ))}
                 <div className={`register-plus`}>
-                    <Button label="Login" onClick={handleFormSubmit} />
+                    <Button label="Register"  />
                     <button className={`button-add`} onClick={handleAddField}>+</button>
                 </div>
             </form>

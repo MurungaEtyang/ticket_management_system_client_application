@@ -15,17 +15,7 @@ const AllUser = () => {
         { username: "Emily", authorities: ["EMPLOYEE"], rating: 4.0 },
         { username: "David", authorities: ["USER"], rating: 3.5 },
         { username: "Jane", authorities: ["ADMIN"], rating: 4.2 },
-        { username: "Mike", authorities: ["DEPARTMENT_ADMIN"], rating: 3.8 },
-        { username: "Emily", authorities: ["EMPLOYEE"], rating: 4.0 },
-        { username: "David", authorities: ["USER"], rating: 3.5 },
-        { username: "Jane", authorities: ["ADMIN"], rating: 4.2 },
-        { username: "Mike", authorities: ["DEPARTMENT_ADMIN"], rating: 3.8 },
-        { username: "Emily", authorities: ["EMPLOYEE"], rating: 4.0 },
-        { username: "David", authorities: ["USER"], rating: 3.5 },
-        { username: "Jane", authorities: ["ADMIN"], rating: 4.2 },
-        { username: "Mike", authorities: ["DEPARTMENT_ADMIN"], rating: 3.8 },
-        { username: "Emily", authorities: ["EMPLOYEE"], rating: 4.0 },
-        { username: "David", authorities: ["USER"], rating: 3.5 },
+
     ]);
     const [error, setError] = useState("");
     const [searchUsername, setSearchUsername] = useState("");
@@ -40,7 +30,7 @@ const AllUser = () => {
 
     useEffect(() => {
         handleSearch();
-    }, [searchUsername]);
+    }, [searchUsername, users]);
 
     return (
         <section className="all-users">
@@ -62,7 +52,7 @@ const AllUser = () => {
 
                     <section className="Department-section-ticket">
                         {filteredUsers.length === 0 ? (
-                            <label className="depart-no-tickets">No tickets available.</label>
+                            <label className="depart-no-tickets">There are no user related to the provided search username: {searchUsername}</label>
                         ) : (
                             <table className="depart-card-tickets-table">
                                 <thead>

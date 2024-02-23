@@ -2,6 +2,7 @@ body{
   background-color: black;
 }
 
+
 .App {
   text-align: center;
 }
@@ -11,10 +12,28 @@ body{
   pointer-events: none;
 }
 
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-text {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
 .toggleButton {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   background-color: rgba(0, 0, 255, 0.29);
   border: none;
   outline: none;
@@ -65,6 +84,12 @@ body{
 
 .dark-mode input{
   color: black;
+  background-color: rgba(255, 255, 255, 0.76);
+}
+
+.dark-mode textarea{
+  color: black;
+  background-color: rgba(255, 255, 255, 0.76);
 }
 
 .dark-mode a{
@@ -113,6 +138,7 @@ body{
 
 .dark-mode select{
   color: black;
+  background-color: rgba(255, 255, 255, 0.76);
 }
 
 .dark-mode Select{
@@ -120,6 +146,14 @@ body{
 }
 
 .dark-mode option{
+  color: black;
+}
+
+.dark-mode .depart-card-tickets-table td{
+  color: black;
+}
+
+.dark-mode table td{
   color: black;
 }
 
@@ -142,9 +176,26 @@ body{
   height: 100vh;
 }
 
-/*.dark-mode .dropdown{*/
-/*  color: rgb(0, 0, 0);*/
-/*}*/
+.toggleChatButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 255, 0.29);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+  border-radius: 50px;
+  height: 30px;
+  width: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.toggleChatButton:hover {
+  background-color: #0056b3;
+}
 
 
 .App-link {
