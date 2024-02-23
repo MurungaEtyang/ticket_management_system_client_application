@@ -23,7 +23,6 @@ export const LoginInputsData = () => {
 
     const handleFormSubmit = () => {
         setIsLoading(true);
-        alert("Logging in...");
         setTimeout(() => {
             const authorityData = [{
                 username: email,
@@ -32,7 +31,7 @@ export const LoginInputsData = () => {
                 token: "token"
             }];
             sessionStorage.setItem('user_data', JSON.stringify(authorityData));
-
+            sessionStorage.setItem('email', email);
             setIsLoading(false);
         }, 2000);
     };

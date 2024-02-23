@@ -1,6 +1,6 @@
 {
   "name": "ticket_management_system_client_application",
-  "version": "0.1.0",
+  "version": "0.0.5",
   "private": true,
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.5.1",

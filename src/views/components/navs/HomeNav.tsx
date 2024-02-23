@@ -1,5 +1,6 @@
+
 import "../../../resource_files/css/nav.css";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Nav from '../props/Nav_bar';
 import { CustomText } from "../props/CustomText";
 import UserTicketBooking from "../../tickets/UserTicketBooking";
@@ -8,11 +9,16 @@ import OpenTickets from "../../tickets/OpenTickets";
 import PendingTickets from "../../tickets/PendingTickets";
 import ClosedTickets from "../../tickets/ClosedTickets";
 import FaqsClient from "../../others/FaqsClient";
-import {Dashboard} from "../../Dashboard";
+import { Dashboard } from "../../Dashboard";
 
 export const HomeNav = () => {
-    const [linkIsCurrent, setLinkIsCurrent] = useState(false);
+
     const [renderComponent, setRenderComponent] = useState<React.ReactNode>(null);
+    const email = sessionStorage.getItem('email')!;
+
+    useEffect(() => {
+        setRenderComponent(<Dashboard />);
+    }, []);
 
     const handleAdminLinks = (event: { preventDefault: () => void; }, url: string) => {
         event.preventDefault();
@@ -22,15 +28,14 @@ export const HomeNav = () => {
         } else if (url === '/all_user_tickets') {
             setRenderComponent(<UserTickets />);
         } else if (url === '/open_tickets') {
-            setRenderComponent(< OpenTickets />);
+            setRenderComponent(<OpenTickets />);
         } else if (url === '/pending_tickets') {
             setRenderComponent(<PendingTickets />);
         } else if (url === '/closed_tickets') {
-            setRenderComponent(< ClosedTickets />);
+            setRenderComponent(<ClosedTickets />);
         } else if (url === '/faqs') {
-            setRenderComponent(< FaqsClient />);
-        }
-        else if (url === '/change_email') {
+            setRenderComponent(<FaqsClient />);
+        } else if (url === '/change_email') {
             setRenderComponent(<CustomText label={"Hello Change Email"} />);
         } else if (url === '/change_password') {
             setRenderComponent(<CustomText label={"Hello Change Password"} />);
@@ -41,36 +46,34 @@ export const HomeNav = () => {
         } else {
             setRenderComponent(<CustomText label={"Hello Default"} />);
         }
-
-        // window.history.pushState(null, '', url);
     };
 
     const navLinks = [
         { label: 'DASHBOARD', url: '/dashboard' },
-
-        {label: 'Menu',
+        {
+            label: 'MENU',
             dropdownOptions: [
                 { label: 'Faqs', url: '/faqs' },
-
             ],
         },
-
-        {label: 'Book TICKETS', url: '/book_tickets'},
-        {label: 'Tickets',
+        { label: 'BOOK TICKETS', url: '/book_tickets' },
+        {
+            label: 'TICKETS',
             dropdownOptions: [
                 { label: 'All Tickets', url: '/all_user_tickets' },
                 { label: 'Open Tickets', url: '/open_tickets' },
                 { label: 'Pending Tickets', url: '/pending_tickets' },
                 { label: 'Closed Tickets', url: '/closed_tickets' },
             ],
-        }, {
+        },
+        {
             label: 'PROFILE',
             dropdownOptions: [
-                { label: 'Evans murunga', url: '/change_email' },
+                { label: email, url: '/change_email' },
                 { label: 'Change Password', url: '/change_password' },
                 { label: 'Logout', url: '/logout' },
             ],
-        }
+        },
     ];
 
     return (

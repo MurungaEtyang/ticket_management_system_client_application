@@ -1,4 +1,28 @@
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+}
+h3 {
+    color: white;
+}
 
+h4 {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+h6 {
+    color: white;
+}
+
+p{
+    color: rgba(255, 255, 255, 0.76);
+}
 .home-container {
     background-image: url(../images/background/home.jpg), linear-gradient(#151414, #151414);
     background-size: cover;
@@ -113,6 +137,12 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+.section-ticket{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
 }
 
 .depart-no-tickets {
@@ -648,57 +678,41 @@ h1{
     cursor: not-allowed;
 }
 
-/*css chat modal*/
-.chat-section {
-    position: absolute;
-    top: 30%;
-    right: 1%;
-    margin: auto;
-    width: 25%;
-    height: 55%;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    z-index: 999;
-}
+/*search ticket*/
 
-.chat {
-    flex: 1;
-    overflow-y: auto;
-    padding: 10px;
-}
 
-.send-message {
+
+.search-ticket-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-.send-message textarea {
-    flex: 1;
-    height: 40px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: none;
-}
-
-.send-message button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.send-message button:hover {
-    background-color: #0056b3;
+.search-ticket-container input{
+    width: 50%;
+    font-size: larger;
+    margin-top: 30px;
 }
 
 
+.ticket-booking-info {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ticket-booking-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ticket-booking-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
 
 
 

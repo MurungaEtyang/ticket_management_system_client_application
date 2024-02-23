@@ -46,47 +46,7 @@ const UserTickets = () => {
                     assignedTo: 'Jane Smith',
                     deadline: '2022-12-31',
                 },
-                {
-                    ticketNumber: 2,
-                    title: 'Sample Ticket 2',
-                    description: 'This is a sample ticket 2',
-                    priority: 'High',
-                    status: 'OPEN',
-                    raisedBy: 'John Doe',
-                    assignedTo: 'Jane Smith',
-                    deadline: '2022-12-31',
-                },
-                {
-                    ticketNumber: 3,
-                    title: 'Sample Ticket 3',
-                    description: 'This is a sample ticket 3',
-                    priority: 'High',
-                    status: 'OPEN',
-                    raisedBy: 'John Doe',
-                    assignedTo: 'Jane Smith',
-                    deadline: '2022-12-31',
-                },
-                {
-                    ticketNumber: 4,
-                    title: 'Sample Ticket 4',
-                    description: 'This is a sample ticket 4',
-                    priority: 'High',
-                    status: 'OPEN',
-                    raisedBy: 'John Doe',
-                    assignedTo: 'Jane Smith',
-                    deadline: '2022-12-31',
-                },
-                {
-                    ticketNumber: 5,
-                    title: 'Sample Ticket 5',
-                    description: 'This is a sample ticket 5',
-                    priority: 'High',
-                    status: 'OPEN',
-                    raisedBy: 'John Doe',
-                    assignedTo: 'Jane Smith',
-                    deadline: '2022-12-31',
-                },
-                // Add more tickets here
+
             ];
             setTickets(data);
             setLoading(false);

@@ -111,7 +111,7 @@ function App() {
                             )}
                             {showChatModal && <ChatModal />}
                         </div>
-                        <button className={`toggleChatButton`} onClick={toggleChatModal}><FaComment /></button>
+                        {/*<button className={`toggleChatButton`} onClick={toggleChatModal}><FaComment /></button>*/}
                     </>
                 )}
             </div>

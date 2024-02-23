@@ -33,7 +33,7 @@ body{
 .toggleButton {
   position: fixed;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
   background-color: rgba(0, 0, 255, 0.29);
   border: none;
   outline: none;
@@ -179,7 +179,7 @@ body{
 .toggleChatButton {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   background-color: rgba(0, 0, 255, 0.29);
   border: none;
   outline: none;
