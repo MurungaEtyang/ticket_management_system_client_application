@@ -8,13 +8,21 @@ import { Index } from "./views/Index";
 import ChatModal from './views/others/ChatModal';
 import { FaComment } from "react-icons/fa";
 import { BeatLoader } from 'react-spinners';
-import {Home} from "./views/Home";
+import { Home } from "./views/Home";
 
 function App() {
     const [darkMode, setDarkMode] = useState(false);
     const [showChatModal, setShowChatModal] = useState(false);
-    const [isLoading, setIsLoading] = useState(true); // Add loading state
-    const [colorIndex, setColorIndex] = useState(0); // Add color index state
+    const [isLoading, setIsLoading] = useState(true);
+    const [colorIndex, setColorIndex] = useState(0);
+    const [authority, setAuthority] = useState(sessionStorage.getItem('user_data'));
+
+    let userdata = null;
+    console.log(authority);
+    if (authority) {
+        userdata = JSON.parse(authority);
+        console.log(userdata);
+    }
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
@@ -50,6 +58,18 @@ function App() {
         };
     }, []);
 
+    useEffect(() => {
+        const handleStorageChange = () => {
+            setAuthority(sessionStorage.getItem('user_data'));
+        };
+
+        window.addEventListener('storage', handleStorageChange);
+
+        return () => {
+            window.removeEventListener('storage', handleStorageChange);
+        };
+    }, []);
+
     const getColor = () => {
         switch (colorIndex) {
             case 0:
@@ -65,34 +85,37 @@ function App() {
 
     return (
         <body>
-            <ThemeProvider darkMode={darkMode} toggleDarkMode={toggleDarkMode}>
-                <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
-                    {isLoading ? (
-                        <div className="loader-container">
-                            <div className="loader">
-                                <BeatLoader color="blue" size={40} />
-                                <div className="loader-text" style={{ color: getColor() }}>
-                                    POWERED BY TMS...
-                                </div>
+        <ThemeProvider darkMode={darkMode} toggleDarkMode={toggleDarkMode}>
+            <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
+                {isLoading ? (
+                    <div className="loader-container">
+                        <div className="loader">
+                            <BeatLoader color="blue" size={40} />
+                            <div className="loader-text" style={{ color: getColor() }}>
+                                POWERED BY TMS...
                             </div>
                         </div>
-                    ) : (
-                        <>
-                            <button className={`toggleButton`} onClick={toggleDarkMode}>
-                                {darkMode ? <IoMoonOutline /> : <IoSunnyOutline />}
-                            </button>
-                            <div>
+                    </div>
+                ) : (
+                    <>
+                        <button className={`toggleButton`} onClick={toggleDarkMode}>
+                            {darkMode ? <IoMoonOutline /> : <IoSunnyOutline />}
+                        </button>
+                        <div>
+                            {userdata && userdata[0].authority === 'admin' && userdata[0].token ? (
+                                <AdminDashboard />
+                            ) : userdata && userdata[0].authority === 'user' ? (
+                                <Home />
+                            ) : (
                                 <Index />
-                                {showChatModal && <ChatModal />}
-                            </div>
-                            <button className={`toggleChatButton`} onClick={toggleChatModal}><FaComment /></button>
-                        </>
-                    )}
-                </div>
-                {/*<Home />*/}
-                {/*<AdminDashboard />*/}
-
-            </ThemeProvider>
+                            )}
+                            {showChatModal && <ChatModal />}
+                        </div>
+                        <button className={`toggleChatButton`} onClick={toggleChatModal}><FaComment /></button>
+                    </>
+                )}
+            </div>
+        </ThemeProvider>
         </body>
     );
 }

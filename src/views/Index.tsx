@@ -1,7 +1,7 @@
 import "../resource_files/css/style.css"
 import React, { useState } from 'react';
 import { IndexNavLinks } from "./components/navs/IndexNavLinks";
-import { IndexInputs } from "./components/inputs/IndexInputs";
+import { LoginInputsData } from "./components/inputs/LoginInputsData";
 import ImageComponent from "./components/props/Image";
 import { CustomText } from "./components/props/CustomText";
 import { Button } from "./components/props/Button";

@@ -1,0 +1,40 @@
+.search-ticket {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.search-ticket input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.search-ticket ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.search-ticket li {
+    margin-bottom: 10px;
+}
+
+.search-ticket h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search-ticket p {
+    font-size: 16px;
+}

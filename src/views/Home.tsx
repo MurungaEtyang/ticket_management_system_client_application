@@ -13,11 +13,6 @@ export const Home = () => {
             <div style={{ marginBottom: "40px" }}>
                 <HomeNav />
             </div>
-            <div>
-                <h2 className={`title`}> <CustomText label="Customer Service Dashboard" /> </h2>
-                <p className={`slogan`}> <CustomText label={`We care about your satisfaction`} /> </p>
-            </div>
-
         </div>
     );
 };
