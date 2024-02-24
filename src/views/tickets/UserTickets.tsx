@@ -39,6 +39,17 @@ const UserTickets = () => {
                 {
                     ticketNumber: 1,
                     title: 'Sample Ticket 1',
+                    description: 'This is a sample ticket 1 kjhdcgshcdb sfhjdvgjb vjhdjvhjbd cjdvjdjv',
+                    priority: 'High',
+                    status: 'OPEN',
+                    raisedBy: 'John Doe',
+                    assignedTo: 'Jane Smith',
+                    deadline: '2022-12-31',
+                },
+
+                {
+                    ticketNumber: 2,
+                    title: 'Sample Ticket 1',
                     description: 'This is a sample ticket 1',
                     priority: 'High',
                     status: 'OPEN',
@@ -46,6 +57,16 @@ const UserTickets = () => {
                     assignedTo: 'Jane Smith',
                     deadline: '2022-12-31',
                 },
+                {
+                    ticketNumber: 3,
+                    title: 'Sample Ticket 1',
+                    description: 'This is a sample ticket 1',
+                    priority: 'High',
+                    status: 'OPEN',
+                    raisedBy: 'John Doe',
+                    assignedTo: 'Jane Smith',
+                    deadline: '2022-12-31',
+                }
 
             ];
             setTickets(data);
@@ -74,7 +95,6 @@ const UserTickets = () => {
         const searchedTicketId = searchId;
         setSearchId(searchedTicketId);
     }
-
     return (
         <section className="depart">
             {error && <div className="error">{error}</div>}
@@ -88,52 +108,54 @@ const UserTickets = () => {
                             value={searchId}
                             onChange={(e) => setSearchId(e.target.value)}
                         />
-                        <button type="button" onClick={handleSearch}>
-                            Search
-                        </button>
                     </div>
                     <>
                         <section className="section-ticket">
                             {loading ? (
-                                <BeatLoader color={'blue'} size={50} />
+                                <BeatLoader color={"blue"} size={50} />
                             ) : filteredTickets.length === 0 ? (
-                                <div className="depart-no-tickets">There are no tickets related to the provided search ID {searchId}.</div>
+                                <div className="depart-no-tickets">
+                                    There are no tickets related to the provided search ID {searchId}.
+                                </div>
                             ) : (
-                                <table className="depart-card-tickets-table">
-                                    <thead>
-                                    <tr>
-                                        <th>Ticket Number</th>
-                                        <th>Title</th>
-                                        <th>Description</th>
-                                        <th>Priority</th>
-                                        <th>Status</th>
-                                        <th>Raised By</th>
-                                        <th>Assigned To</th>
-                                        <th>Deadline</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
+                                <div className="dashboard-card-tickets-table">
                                     {filteredTickets.map((ticket) => (
-                                        <tr key={ticket.ticketNumber}>
-                                            <td>
-                                                <button
-                                                    type="button"
-                                                    onClick={() => setSelectedTicketNumber(ticket.ticketNumber)}
-                                                >
-                                                    {ticket.ticketNumber}
-                                                </button>
-                                            </td>
-                                            <td>{ticket.title}</td>
-                                            <td>{ticket.description}</td>
-                                            <td>{ticket.priority}</td>
-                                            <td>{ticket.status}</td>
-                                            <td>{ticket.raisedBy}</td>
-                                            <td>{ticket.assignedTo}</td>
-                                            <td>{ticket.deadline}</td>
-                                        </tr>
+                                        <div className="ticket-row" key={ticket.ticketNumber}>
+                                            <div className="ticket-info">
+                                                <h3 className="ticket-label">Ticket Number:</h3>
+                                                <button className="ticket-value-button">{ticket.ticketNumber}</button>
+                                            </div>
+                                            <div className="ticket-info">
+                                                <h3 className="ticket-label">Title:</h3>
+                                                <p className="ticket-value">{ticket.title}</p>
+                                            </div>
+                                            <div className="ticket-info">
+                                                <h3 className="ticket-label">Description:</h3>
+                                                <p className="ticket-value">{ticket.description}</p>
+                                            </div>
+                                            <div className="ticket-info">
+                                                <h3 className="ticket-label">Priority:</h3>
+                                                <p className="ticket-value">{ticket.priority}</p>
+                                            </div>
+                                            <div className="ticket-info">
+                                                <h3 className="ticket-label">Status:</h3>
+                                                <p className="ticket-value">{ticket.status}</p>
+                                            </div>
+                                            <div className="ticket-info">
+                                                <h3 className="ticket-label">Raised By:</h3>
+                                                <p className="ticket-value">{ticket.raisedBy}</p>
+                                            </div>
+                                            <div className="ticket-info">
+                                                <h3 className="ticket-label">Assigned To:</h3>
+                                                <p className="ticket-value">{ticket.assignedTo}</p>
+                                            </div>
+                                            <div className="ticket-info">
+                                                <h3 className="ticket-label">Deadline:</h3>
+                                                <p className="ticket-value">{ticket.deadline}</p>
+                                            </div>
+                                        </div>
                                     ))}
-                                    </tbody>
-                                </table>
+                                </div>
                             )}
                         </section>
                     </>
@@ -152,6 +174,7 @@ const UserTickets = () => {
             )}
         </section>
     );
+
 };
 
 export default UserTickets;

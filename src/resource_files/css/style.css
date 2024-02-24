@@ -406,6 +406,49 @@ label {
     filter: blur(-10px);
 }
 
+.ticket-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.ticket-info {
+    background-color: rgba(40, 44, 52, 0.46);
+    border-radius: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.ticket-value-button {
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .ticket-row {
+        flex-direction: column;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .ticket-value-button {
+        width: 50%;
+    }
+
+    .depart-search-container{
+        display: flex;
+        gap: -20px;
+
+    }
+
+    .depart-search-container button{
+        width: 40%;
+    }
+
+}
 
 .modal-overlay,
 .modal-content {

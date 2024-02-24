@@ -1,18 +1,25 @@
-
 import React, { useState, useEffect } from "react";
 import { BeatLoader } from 'react-spinners';
 import { Input } from '../props/Input'
 import { Button } from "../props/Button";
-import { ApiServices } from "../../../api_handler/services/ApiServices";
-import { Login } from "../../../api_handler/backend/Login";
+
+export const setAuthorityData = () => {
+    const authorityData = [{
+        email: "email@email.com",
+        role: "authorization",
+        authority: "user",
+        token: "token"
+    }];
+
+    sessionStorage.setItem('email', authorityData[0].email);
+    return authorityData;
+};
 
 export const LoginInputsData = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [authority, setAuthority] = useState(sessionStorage.getItem('user_data'));
-    const apiService = new ApiServices();
-
+    const [, setAuthority] = useState<any>(null);
     const handleEmailChange = (value: string) => {
         setEmail(value);
     };
@@ -24,14 +31,10 @@ export const LoginInputsData = () => {
     const handleFormSubmit = () => {
         setIsLoading(true);
         setTimeout(() => {
-            const authorityData = [{
-                username: email,
-                role: "authorization",
-                authority: "user",
-                token: "token"
-            }];
-            sessionStorage.setItem('user_data', JSON.stringify(authorityData));
-            sessionStorage.setItem('email', email);
+
+            const returnedAuthorityData = setAuthorityData();
+            setAuthority(returnedAuthorityData);
+
             setIsLoading(false);
         }, 2000);
     };
@@ -43,7 +46,7 @@ export const LoginInputsData = () => {
 
     useEffect(() => {
         const handleStorageChange = () => {
-            setAuthority(sessionStorage.getItem('user_data'));
+            setAuthority(JSON.parse(sessionStorage.getItem('user_data') || 'null'));
         };
 
         window.addEventListener('storage', handleStorageChange);

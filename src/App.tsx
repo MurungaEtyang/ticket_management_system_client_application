@@ -9,20 +9,21 @@ import ChatModal from './views/others/ChatModal';
 import { FaComment } from "react-icons/fa";
 import { BeatLoader } from 'react-spinners';
 import { Home } from "./views/Home";
+import { setAuthorityData } from "./views/components/inputs/LoginInputsData";
+
 
 function App() {
     const [darkMode, setDarkMode] = useState(false);
     const [showChatModal, setShowChatModal] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const [colorIndex, setColorIndex] = useState(0);
-    const [authority, setAuthority] = useState(sessionStorage.getItem('user_data'));
+    const authority = setAuthorityData()
 
-    let userdata = null;
-    console.log(authority);
-    if (authority) {
-        userdata = JSON.parse(authority);
-        console.log(userdata);
-    }
+    // let userdata = null;
+    // console.log(authority);
+    // if (authority) {
+    //     console.log(authority);
+    // }
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
@@ -60,7 +61,7 @@ function App() {
 
     useEffect(() => {
         const handleStorageChange = () => {
-            setAuthority(sessionStorage.getItem('user_data'));
+            setAuthorityData()
         };
 
         window.addEventListener('storage', handleStorageChange);
@@ -102,9 +103,9 @@ function App() {
                             {darkMode ? <IoMoonOutline /> : <IoSunnyOutline />}
                         </button>
                         <div>
-                            {userdata && userdata[0].authority === 'admin' && userdata[0].token ? (
+                            {authority[0].authority === 'admin' && authority[0].token ? (
                                 <AdminDashboard />
-                            ) : userdata && userdata[0].authority === 'user' ? (
+                            ) : authority[0].authority === 'user' ? (
                                 <Home />
                             ) : (
                                 <Index />

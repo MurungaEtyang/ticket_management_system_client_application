@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f525a1a-d46a-445d-a4fd-fecd7698e402" name="Changes" comment="updated">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource_files/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource_files/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource_files/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource_files/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/inputs/LoginInputsData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/inputs/LoginInputsData.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/tickets/UserTickets.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/tickets/UserTickets.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="com.haulmont.rcb.arrow_function_component" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2cUbY99AqmVOSxc8Hq9MQyMZlLH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Murunga/Desktop/ticket_management_system_client_application/components&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Murunga/Desktop/ticket_management_system_client_application/src/views/others&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Murunga\\Desktop\\ticket_management_system_client_application\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Murunga\Desktop\ticket_management_system_client_application\src\views\others" />
+      <recent name="C:\Users\Murunga\Desktop\ticket_management_system_client_application\src\views\admin\department" />
+      <recent name="C:\Users\Murunga\Desktop\ticket_management_system_client_application\src\views\admin\tickets" />
+      <recent name="C:\Users\Murunga\Desktop\ticket_management_system_client_application\src\views\admin" />
+      <recent name="C:\Users\Murunga\Desktop\ticket_management_system_client_application\src\resource_files\images\background" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Murunga\Desktop\ticket_management_system_client_application\src\views\components\props" />
+      <recent name="C:\Users\Murunga\Desktop\ticket_management_system_client_application\src\views\tickets" />
+      <recent name="C:\Users\Murunga\Desktop\ticket_management_system_client_application\src\views\others" />
+      <recent name="C:\Users\Murunga\Desktop\ticket_management_system_client_application\src\resource_files\css" />
+      <recent name="C:\Users\Murunga\Desktop\ticket_management_system_client_application\src\views\admin\users" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.build" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f525a1a-d46a-445d-a4fd-fecd7698e402" name="Changes" comment="" />
+      <created>1708169150931</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708169150931</updated>
+      <workItem from="1708169153201" duration="34505000" />
+      <workItem from="1708234472735" duration="14859000" />
+      <workItem from="1708255790697" duration="75815000" />
+      <workItem from="1708422460381" duration="39549000" />
+      <workItem from="1708544833279" duration="22424000" />
+      <workItem from="1708665916146" duration="33560000" />
+      <workItem from="1708722781532" duration="10499000" />
+      <workItem from="1708767614808" duration="2193000" />
+      <workItem from="1708776692941" duration="2308000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1708190985377</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708190985426</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1708260368480</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708260368480</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated">
+      <created>1708389879739</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708389879739</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updated">
+      <created>1708672974149</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708672974151</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated">
+      <created>1708699460565</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708699460565</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updated">
+      <created>1708725423091</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708725423091</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+  </component>
+  <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
+    <option name="historyDtoById">
+      <map>
+        <entry key="1d5b5c">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/views/tickets/UserTickets.tsx" />
+                </list>
+              </option>
+              <option name="id" value="1d5b5c" />
+              <option name="initiateTms" value="1708760548864" />
+              <option name="request" value="display tickets vertically" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="To display the tickets vertically, you can modify the JSX code in the `UserTickets` component as follows:&#10;&#10;```tsx&#10;return (&#10;  &lt;section className=&quot;depart&quot;&gt;&#10;    {error &amp;&amp; &lt;div className=&quot;error&quot;&gt;{error}&lt;/div&gt;}&#10;&#10;    &lt;form className=&quot;depart-card-tickets&quot;&gt;&#10;      &lt;div className=&quot;depart-card-tickets-body&quot;&gt;&#10;        &lt;div className=&quot;depart-search-container&quot;&gt;&#10;          &lt;input&#10;            type=&quot;text&quot;&#10;            placeholder=&quot;Enter Ticket ID&quot;&#10;            value={searchId}&#10;            onChange={(e) =&gt; setSearchId(e.target.value)}&#10;          /&gt;&#10;          &lt;button type=&quot;button&quot; onClick={handleSearch}&gt;&#10;            Search&#10;          &lt;/button&gt;&#10;        &lt;/div&gt;&#10;        &lt;&gt;&#10;          &lt;section className=&quot;section-ticket&quot;&gt;&#10;            {loading ? (&#10;              &lt;BeatLoader color={&quot;blue&quot;} size={50} /&gt;&#10;            ) : filteredTickets.length === 0 ? (&#10;              &lt;div className=&quot;depart-no-tickets&quot;&gt;&#10;                There are no tickets related to the provided search ID {searchId}.&#10;              &lt;/div&gt;&#10;            ) : (&#10;              &lt;div className=&quot;depart-card-tickets-table&quot;&gt;&#10;                {filteredTickets.map((ticket) =&gt; (&#10;                  &lt;div className=&quot;ticket-row&quot; key={ticket.ticketNumber}&gt;&#10;                    &lt;div className=&quot;ticket-info&quot;&gt;&#10;                      &lt;div className=&quot;ticket-label&quot;&gt;Ticket Number:&lt;/div&gt;&#10;                      &lt;div className=&quot;ticket-value&quot;&gt;{ticket.ticketNumber}&lt;/div&gt;&#10;                    &lt;/div&gt;&#10;                    &lt;div className=&quot;ticket-info&quot;&gt;&#10;                      &lt;div className=&quot;ticket-label&quot;&gt;Title:&lt;/div&gt;&#10;                      &lt;div className=&quot;ticket-value&quot;&gt;{ticket.title}&lt;/div&gt;&#10;                    &lt;/div&gt;&#10;                    &lt;div className=&quot;ticket-info&quot;&gt;&#10;                      &lt;div className=&quot;ticket-label&quot;&gt;Description:&lt;/div&gt;&#10;                      &lt;div className=&quot;ticket-value&quot;&gt;{ticket.description}&lt;/div&gt;&#10;                    &lt;/div&gt;&#10;                    &lt;div className=&quot;ticket-info&quot;&gt;&#10;                      &lt;div className=&quot;ticket-label&quot;&gt;Priority:&lt;/div&gt;&#10;                      &lt;div className=&quot;ticket-value&quot;&gt;{ticket.priority}&lt;/div&gt;&#10;                    &lt;/div&gt;&#10;                    &lt;div className=&quot;ticket-info&quot;&gt;&#10;                      &lt;div className=&quot;ticket-label&quot;&gt;Status:&lt;/div&gt;&#10;                      &lt;div className=&quot;ticket-value&quot;&gt;{ticket.status}&lt;/div&gt;&#10;                    &lt;/div&gt;&#10;                    &lt;div className=&quot;ticket-info&quot;&gt;&#10;                      &lt;div className=&quot;ticket-label&quot;&gt;Raised By:&lt;/div&gt;&#10;                      &lt;div className=&quot;ticket-value&quot;&gt;{ticket.raisedBy}&lt;/div&gt;&#10;                    &lt;/div&gt;&#10;                    &lt;div className=&quot;ticket-info&quot;&gt;&#10;                      &lt;div className=&quot;ticket-label&quot;&gt;Assigned To:&lt;/div&gt;&#10;                      &lt;div className=&quot;ticket-value&quot;&gt;{ticket.assignedTo}&lt;/div&gt;&#10;                    &lt;/div&gt;&#10;                    &lt;div className=&quot;ticket-info&quot;&gt;&#10;                      &lt;div className=&quot;ticket-label&quot;&gt;Deadline:&lt;/div&gt;&#10;                      &lt;div className=&quot;ticket-value&quot;&gt;{ticket.deadline}&lt;/div&gt;&#10;                    &lt;/div&gt;&#10;                  &lt;/div&gt;&#10;                ))}&#10;              &lt;/div&gt;&#10;            )}&#10;          &lt;/section&gt;&#10;        &lt;/&gt;&#10;      &lt;/div&gt;&#10;    &lt;/form&gt;&#10;&#10;    {showModal &amp;&amp; (&#10;      &lt;div className=&quot;modal-overlay&quot;&gt;&#10;        &lt;div className=&quot;modal-content&quot;&gt;&#10;          &lt;button className=&quot;modal-close-button&quot; onClick={() =&gt; setShowModal(false)}&gt;&#10;            &lt;FaTimes /&gt;&#10;          &lt;/button&gt;&#10;          &lt;AssignTicket /&gt;&#10;        &lt;/div&gt;&#10;      &lt;/div&gt;&#10;    )}&#10;  &lt;/section&gt;&#10;);&#10;```&#10;&#10;In this modified code, I replaced the `&lt;table&gt;` element with a `&lt;div&gt;` element with the class name &quot;depart-card-tickets-table&quot;. Inside this `&lt;div&gt;`, I mapped through the `filteredTickets` array and created a `&lt;div&gt;` element for each ticket. Each ticket is displayed vertically with its corresponding information using the `&lt;div&gt;` elements with class names &quot;ticket-row&quot;, &quot;ticket-info&quot;, &quot;ticket-label&quot;, and &quot;ticket-value&quot;." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1708760558109" />
+              <option name="usedFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/views/tickets/UserTickets.tsx" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="54bd9b">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/views/tickets/UserTickets.tsx" />
+                </list>
+              </option>
+              <option name="id" value="54bd9b" />
+              <option name="initiateTms" value="1708760697230" />
+              <option name="request" value="best css to make them horizontal for desktop and vertcal for mobile phone" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="To make the tickets display horizontally on desktop and vertically on mobile phones, you can use CSS media queries to apply different styles based on the screen size. Here's an example of how you can modify the CSS for the `UserTickets` component:&#10;&#10;```tsx&#10;import React, { useState, useEffect } from 'react';&#10;import { BeatLoader } from 'react-spinners';&#10;import { FaTimes } from 'react-icons/fa';&#10;import AssignTicket from &quot;../admin/tickets/AssignTicket&quot;;&#10;import './UserTickets.css'; // Import the CSS file&#10;&#10;const UserTickets = () =&gt; {&#10;  // ... existing code ...&#10;&#10;  return (&#10;    &lt;section className=&quot;depart&quot;&gt;&#10;      {/* ... existing code ... */}&#10;&#10;      &lt;form className=&quot;depart-card-tickets&quot;&gt;&#10;        &lt;div className=&quot;depart-card-tickets-body&quot;&gt;&#10;          {/* ... existing code ... */}&#10;&#10;          &lt;&gt;&#10;            &lt;section className=&quot;section-ticket&quot;&gt;&#10;              {/* ... existing code ... */}&#10;            &lt;/section&gt;&#10;          &lt;/&gt;&#10;        &lt;/div&gt;&#10;      &lt;/form&gt;&#10;&#10;      {/* ... existing code ... */}&#10;    &lt;/section&gt;&#10;  );&#10;};&#10;&#10;export default UserTickets;&#10;```&#10;&#10;Now, create a new CSS file named `UserTickets.css` and add the following styles:&#10;&#10;```css&#10;.depart-card-tickets-body {&#10;  display: flex;&#10;  flex-wrap: wrap;&#10;  justify-content: space-between;&#10;}&#10;&#10;.ticket-row {&#10;  width: 48%; /* Adjust the width as per your requirement */&#10;  margin-bottom: 20px;&#10;}&#10;&#10;@media (max-width: 768px) {&#10;  .depart-card-tickets-body {&#10;    flex-direction: column;&#10;  }&#10;&#10;  .ticket-row {&#10;    width: 100%;&#10;  }&#10;}&#10;```&#10;&#10;In the above CSS, the `.depart-card-tickets-body` class is used to display the tickets horizontally on desktop by using `display: flex` and `justify-content: space-between`. The `.ticket-row` class is used to style each ticket row.&#10;&#10;Inside the `@media (max-width: 768px)` media query, the `.depart-card-tickets-body` class is modified to display the tickets vertically on mobile devices by changing the `flex-direction` to `column`. The `.ticket-row` class is set to occupy the full width of the container.&#10;&#10;Make sure to import the `UserTickets.css` file in your component as shown in the code snippet above.&#10;&#10;With these CSS modifications, the tickets will be displayed horizontally on desktop and vertically on mobile phones." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1708760704089" />
+              <option name="usedFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/views/tickets/UserTickets.tsx" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

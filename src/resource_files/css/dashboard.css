@@ -1,0 +1,21 @@
+
+.depart-card-tickets-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ticket-row {
+    width: 48%; /* Adjust the width as per your requirement */
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .depart-card-tickets-body {
+        flex-direction: column;
+    }
+
+    .ticket-row {
+        width: 100%;
+    }
+}
